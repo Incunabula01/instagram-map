@@ -43,6 +43,9 @@ GEM
       multipart-post (>= 1.2, < 3)
     faraday_middleware (0.9.1)
       faraday (>= 0.7.4, < 0.10)
+    foundation-rails (5.5.0.0)
+      railties (>= 3.1.0)
+      sass (>= 3.2.0, < 3.4)
     hashie (3.3.2)
     hike (1.2.3)
     i18n (0.7.0)
@@ -127,6 +130,7 @@ PLATFORMS
 DEPENDENCIES
   bower-rails
   coffee-rails (~> 4.0.0)
+  foundation-rails
   instagram
   jbuilder (~> 2.0)
   jquery-rails
