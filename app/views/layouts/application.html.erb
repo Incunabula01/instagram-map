@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title><%= content_for?(:title) ? yield(:title) : "Baltimore Unscene Map" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
 
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "vendor/modernizr" %>
@@ -13,18 +13,45 @@
   </head>
 
   <body>
-    
-    <nav class="row top-bar">
-      <div class="small-4 columns">
-        <h1>Baltimore Unscene Map</h1>
+    <header> 
+      <div class="row">
+        <div class="columns small-12">
+           <h1 class="jumbotron">Random Jargon </h1></header>
+           <hr>
+        </div>
       </div>
-    </nav>
+     <div class="row">
+       <div class="columns small-12">
+             <%= yield %>
+       </div>
+     </div>
+     <footer>
+       <div class="row">
+         <div class="columns small-12 medium-4 panel">
+           <ul>
+             <li>Stuff</li>
+             <li>More Stuff</li>
+             <li>Bah</li>
+           </ul>
+         </div>
+         <div class="columns small-12 medium-4 panel">
+           <ul>
+             <li>Facebook</li>
+             <li>Twitter</li>
+             <li>Linkedin</li>
+           </ul>
+         </div>
+         <div class="columns small-12 medium-4 panel">
+           <ul>
+             <li>More Cool stuff</li>
+             <li>bah</li>
+             <li>Typing words</li>
+           </ul>
+         </div>
+       </div>
+     </footer>
 
-    <div class="row">
-      <div class="large-8 offset-2 columns">
-        <%= yield %>
-      </div>
-    </div>
+
 
   </body>
 </html>

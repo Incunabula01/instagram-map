@@ -16,4 +16,18 @@
 //= require turbolinks
 //= require_tree .
 
+$(function(){ $(document).foundation(); 
+	var dList = '<ul>',
+	array = ['Instagram', 'Really', 'Rocks'];
+
+	for(var i =0; i<array.length; i++){
+		$('.listDiv').fadeIn('slow');
+		dlist += "<li>" + array[i] + "</li>";
+	}
+
+	ul += "</ul>";
+
+});
+
+
 $(function(){ $(document).foundation(); });

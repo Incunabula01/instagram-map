@@ -1,6 +1,21 @@
-<% @instagram.each do |instagram| %>
+<div class="row">
 
-<%= image_tag instagram.images.standard_resolution.url %>
+	<% @instagram.each do |instagram| %>
+		<div class="columns small-12 medium-4">
+			<div class="panel">
+				<%= image_tag instagram.images.standard_resolution.url %>
+				<p> <%= 
+						if instagram.caption 
+							caption = instagram.caption.text 
+						else 
+							caption = 'Oops, No Caption'
+						end  
+					%> </p>
+			</div>
+		</div>
+	<% end %>
+	
 
-<% end %>
+</div>
+
 
